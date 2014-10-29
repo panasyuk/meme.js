@@ -1,18 +1,19 @@
 (function() {
   $(function() {
-    var ce, ie, te;
-    ce = new CanvasElement('canvas');
+    var ie;
+    window.ce = new CanvasElement('canvas');
     ie = ce.addElement(ImageElement);
-    ie.set('url', null);
-    te = ce.addElement(TextElement);
-    te.set('font', '30px Verdana');
-    te.set('x', 100);
-    te.set('y', 150);
+    ie.set('url', 'img/keanu.jpg');
+    window.te = ce.addElement(TextElement);
+    te.set('font', 'bold 15px Arial');
+    te.set('style', 'white');
+    te.set('strokeWidth', 3);
+    te.set('x', 361 / 2);
+    te.set('y', 220);
     te.set('strokeStyle', '2px black');
     te.set('stroke', true);
     ce.draw();
     return $('input').on('input', function() {
-      console.log('typed');
       return te.set('text', $(this).val());
     });
   });
