@@ -1,0 +1,26 @@
+{
+  "name": "meme.js",
+  "version": "0.1.0",
+  "description": "Module stat helps you to create memes at the client side",
+  "author": "Alexander Panasyuk <panasmeister@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/panasyuk/meme.js"
+  },
+  "bugs": {
+    "url": "https://github.com/panasyuk/meme.js/issues"
+  },
+  "keywords": [
+    "memes"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-uglify": "~0.6.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-haml2html": "~0.3.0",
+    "grunt-contrib-coffee": "~0.12.0"
+  },
+  "license": "MIT"
+}
